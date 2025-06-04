@@ -18,9 +18,9 @@ import java.util.List;
 import java.util.Locale;
 
 public class TaskAdapter extends ArrayAdapter<Task> {
-    private Context context;
+    private final Context context;
     private List<Task> taskList;
-    private SimpleDateFormat dateFormat;
+    private final SimpleDateFormat dateFormat;
 
     private static class ViewHolder{
         TextView tvTitle;
